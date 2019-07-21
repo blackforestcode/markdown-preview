@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Textarea from "./components/Textarea";
-import Footer from "./components/Footer";
-import marked from "marked";
-import DOMPurify from "dompurify";
+import React, { Component } from 'react';
+import Textarea from './components/Textarea';
+import Footer from './components/Footer';
+import marked from 'marked';
+import DOMPurify from 'dompurify';
 
 const mdplaceholder = `
 # This is a h1...
@@ -58,27 +58,27 @@ class App extends Component {
     return (
       <div
         className="container-fluid"
-        style={{ background: "#6699ff", color: "#ffffff" }}
+        style={{ background: '#6699ff', color: '#ffffff' }}
       >
-        <div className="row my-5">
+        <div className="row mb-3">
           <div className="col">
-            <h1>FCC Markdown Preview</h1>
+            <h1>Markdown Preview</h1>
             <p className="">
-              Stack:{" "}
+              Stack:{' '}
               <a
                 href="https://reactjs.org"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="badge badge-light">React</span>
-              </a>{" "}
+              </a>{' '}
               <a
                 href="https://marked.js.org/#/README.md#README.md"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="badge badge-light">Marked.js</span>
-              </a>{" "}
+              </a>{' '}
               <a
                 href="https://getbootstrap.com"
                 target="_blank"
